@@ -5,10 +5,10 @@ def arrayGenerator(n):
           array.append(random.randint(0,n))
      return array
 
-def algorithmTester(t,A):
+def algorithmTester(f,A):
      t = time.time()*1000
-     sorted = t(A)
+     sorted = f(A)
      t = time.time()*1000-t
-     print("This algorithms took "+t+" miliseconds")
+     print("This algorithms took "+str(t)+" miliseconds")
      print(sorted)
      
